@@ -4,8 +4,11 @@ Static webpage to practice responsive web design
 
 ## Completed so far
 This one is imported from external editor and will be used as a template for the project. The webpage was written in HTML5 and CSS3 only. No JS events.
+
 CSS is a horrible mess. Tag and class selectors are mixed and written without prior plan.
-HTML is acceptable, since I did not planned to use JS framework nor libraries for rendering.
+
+HTML is acceptable, since I did not plan to use JS frameworks nor libraries for rendering.
+
 Npm scripts are superfluous. Some of them was made for Node.js projects, some for single page apps written with Webpack. Most of them can be removed. The same is with packages.
 
 ## Todo

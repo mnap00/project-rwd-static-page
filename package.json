@@ -72,7 +72,7 @@
     "shx": "^0.2.2"
   },
   "directories": {
-    "test": "test"
+    "doc": "docs"
   },
   "dependencies": {}
 }

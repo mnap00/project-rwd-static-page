@@ -1,0 +1,710 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+	margin: 0;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.row::after,
+.clearfix::after {
+	clear: both;
+	content: " ";
+	display: block;
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 1200px;
+	padding: 0 20px;
+	width: 100%;
+}
+
+.container-fluid {
+	margin: 0 auto;
+	padding: 0 20px;
+	width: 100%;
+}
+
+section > .container,
+section > .container-fluid {
+	margin: 50px auto;
+	text-align: center;
+}
+
+.row {
+	margin: 0 -20px;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 12px;
+    width: 100%;
+}
+
+@media (max-width: 767px) {
+    .container,
+    .container-fluid {
+		padding: 0 12px;
+		text-align: center;
+	}
+	
+	.row {
+		margin: 0 -12px;
+	}
+	
+	section > .container,
+	section > .container-fluid {
+		margin: 10px auto;
+	}
+	    
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+    
+    [class*="col-offset-"] {
+		margin-left: 0;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+	section > .container {
+		margin: 30px auto;
+	}
+	
+	[class*="col-"] {
+		float: left;
+		padding: 0 20px;
+		min-height: 1px;
+	}
+
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+
+	.col-m-offset-0 {margin-left: 0;}
+	.col-m-offset-1 {margin-left: 8.33%;}
+	.col-m-offset-2 {margin-left: 16.66%;}
+	.col-m-offset-3 {margin-left: 25%;}
+	.col-m-offset-4 {margin-left: 33.33%;}
+	.col-m-offset-5 {margin-left: 41.66%;}
+	.col-m-offset-6 {margin-left: 50%;}
+	.col-m-offset-7 {margin-left: 58.33%;}
+	.col-m-offset-8 {margin-left: 66.66%;}
+	.col-m-offset-9 {margin-left: 75%;}
+	.col-m-offset-10 {margin-left: 83.33%;}
+	.col-m-offset-11 {margin-left: 91.66%;}
+}
+
+@media (min-width: 1200px) {
+	[class*="col-"] {
+		float: left;
+		padding: 0 20px;
+		min-height: 1px;
+	}
+	
+	.col-1 {width: 8.33%;}
+	.col-2 {width: 16.66%;}
+	.col-3 {width: 25%;}
+	.col-4 {width: 33.33%;}
+	.col-5 {width: 41.66%;}
+	.col-6 {width: 50%;}
+	.col-7 {width: 58.33%;}
+	.col-8 {width: 66.66%;}
+	.col-9 {width: 75%;}
+	.col-10 {width: 83.33%;}
+	.col-11 {width: 91.66%;}
+	.col-12 {width: 100%;}
+
+	.col-offset-0 {margin-left: 0;}
+	.col-offset-1 {margin-left: 8.33%;}
+	.col-offset-2 {margin-left: 16.66%;}
+	.col-offset-3 {margin-left: 25%;}
+	.col-offset-4 {margin-left: 33.33%;}
+	.col-offset-5 {margin-left: 41.66%;}
+	.col-offset-6 {margin-left: 50%;}
+	.col-offset-7 {margin-left: 58.33%;}
+	.col-offset-8 {margin-left: 66.66%;}
+	.col-offset-9 {margin-left: 75%;}
+	.col-offset-10 {margin-left: 83.33%;}
+	.col-offset-11 {margin-left: 91.66%;}
+}
+
+header {
+	background-color: #313332;
+	position: fixed;
+	height: 50px;
+	top: 0;
+	width: 100%;
+	z-index: 1;
+}
+
+header .navbar {
+	float: right;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+header .navbar li {
+	display: inline-block;
+}
+
+header .navbar a {
+	color: #fff;
+	display: block;
+	line-height: 50px;
+	padding: 0 60px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+header .navbar a:hover {
+	background-color: #91948D;
+}
+
+header .logo {
+	padding: 10px 0;
+}
+
+.hero {
+	background-image: url("https://images.unsplash.com/1/macbook-air-all-faded-and-stuff.jpg?auto=format&fit=crop&w=1920&q=80");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: calc(100vh - 50px);
+	margin-top: 50px;
+	min-height: 400px;
+	position: relative;
+}
+
+.slogan {
+	background-color: rgba(50, 51, 49, 0.7);
+	color: #fff;
+	font-size: 1.5rem;
+	font-weight: 800;
+	line-height: 1;
+	max-width: 600px;
+	padding: 0 200px 0 25px;
+	position: absolute;
+	right: 0;
+	text-align: left;
+	text-transform: uppercase;
+	top: 50%;
+	transform: translate(0, -50%);
+}
+
+.slogan::first-line {
+	font-weight: 100;
+}
+
+.links h4 {
+	color: #313332;
+	text-transform: uppercase;
+	transition: color .3s ease-in-out;
+}
+
+.links .btn:hover ~ h4 {
+	color: #00c7e8;
+}
+
+.links p {
+	color: #91948D;
+}
+
+.links .btn {
+	background-color: #313332;
+	border-radius: 10px;
+	border-style: none;
+	cursor: pointer;
+	height: 70px;
+	transition: background-color .3s ease-in-out;
+	width: 70px;
+}
+
+.links .btn:hover {
+	background-color: #00c7e8;
+}
+
+.links .fa {
+	color: #fff;
+	font-size: 40px;
+}
+
+.featured h2 {
+	color: #313332;
+	font-weight: 800;
+	text-transform: uppercase;
+}
+
+.featured p {
+	color: #91948D;
+}
+
+.gallery {
+	padding: 0;
+	width: 100%;
+}
+
+.gallery .img-container {
+	height: auto;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+	position: relative;
+}
+
+.gallery img {
+	display: block;
+	min-width: 100%;
+	overflow: hidden;
+}
+
+.gallery .layer {
+	align-items: center;
+	background-color: rgba(50, 51, 49, 0.5);
+	bottom: -300px;
+	display: flex;
+	justify-content: center;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 300px;
+	transition: all .5s ease-in-out;
+}
+
+.gallery .img-container:hover .layer {
+	align-items: center;
+	bottom: 0;
+	display: flex;
+	justify-content: center;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;	
+}
+
+.gallery .layer .ico-container {
+	text-align: center;
+}
+
+.gallery .layer .fa {
+	background-color: #fff;
+	border-radius: 5px;
+	color: #313332;
+	font-size: 1.2em;
+	line-height: 1em;
+	margin: 10px;
+	padding: 5px;
+	transition: all .3s ease-in-out;
+}
+
+.gallery .layer .fa:hover {
+	background-color: #00c7e8;
+	color: #fff;
+	cursor: pointer;
+	transform: scale(1.2);
+}
+
+.team .img-container {
+	position: relative;
+	border-radius: 50%;
+	height: auto;
+	margin: 0 auto;
+	width: 150px;
+	overflow: hidden;
+}
+
+.team .img-container img {
+	display: block;
+	min-height: 100%;
+	min-width: 100%;
+}
+
+.team .caption {
+	background-color: rgba(153, 153, 153, 0.1);
+	bottom: 0;
+	display: block;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	transition: all .3s ease-in-out;
+}
+
+.team .img-container:hover .caption {
+	background-color: rgba(153, 153, 153, 0.8);
+}
+
+.team .caption a {
+	color: #fff;
+	display: none;
+	font-weight: bold;
+	margin-top: 50%;
+	position: absolute;
+	text-decoration: none;
+	transform: translate(-50%, -50%);
+}
+
+.team .img-container:hover a {
+	display: inline;
+}
+
+.team h4 {
+	color: #636661;
+	font-size: 1.2em;
+	font-weight: 600;
+}
+
+.picture {
+	background-color: #636661;
+	height: 350px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.picture img {
+	border-radius: 10px;
+	margin-top: 20px;
+	max-width: 310px;
+	width: 100%;
+}
+
+.picture .content {
+	color: #fff;
+	max-height: 300px;
+	text-align: left;
+}
+
+.picture .content h2 {
+	font-size: 2em;
+	margin-bottom: 0;
+	margin-top: 30px;
+	text-transform: uppercase;
+}
+
+.picture .content .italic {
+	font-style: italic;
+}
+
+.numbers h4 {
+	color: #00c7e8;
+	text-transform: uppercase;
+}
+
+.numbers p {
+	color: #313332;
+	font-size: 2em;
+	font-weight: 800;
+}
+
+.footer {
+	background-color: #313332;
+}
+
+.footer .container {
+	margin-bottom: 0;
+}
+
+.footer h3,
+.footer h4,
+.footer p {
+	color: #fff;
+	text-align: left;
+}
+
+.footer h3 {
+	margin-top: 30px;
+	overflow: hidden;
+	text-transform: uppercase;
+}
+
+.footer h3::after {
+  content:'\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0';
+  text-decoration: line-through;
+  margin: auto 0.5em;
+}
+
+.footer .contact h4,
+.footer .contact p {
+	margin-top: 10px;
+}
+
+.footer .contact a {
+	color: #fff;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.footer .contact a:hover {
+	color: #00c7e8;
+	font-weight: bold;
+}
+
+.footer .social .btn {
+	background-color: #00c7e8;
+	cursor: pointer;
+	float: left;
+	height: 40px;
+	margin-bottom: 15px;
+	margin-right: 15px;
+	transition: all .3s ease-in-out;
+	width: 40px;
+}
+
+.footer .social .btn:hover {
+	transform: scale(1.2);
+}
+
+.footer .social .fa {
+	color: #fff;
+	font-size: 1.8em;
+	line-height: 40px;
+}
+	
+.licence {
+	background-color: #252726;
+	color: #fff;
+	height: 50px;
+	text-align: center;
+}
+
+.licence p {
+	line-height: 50px;
+	margin: 0;
+}
+
+@media (max-width: 767px) {
+	header {
+		height: 200px;
+		position: static;
+	}
+	
+	header .logo {
+		display: block;
+		margin: 0 auto;
+	}
+	
+	header .navbar {
+		float: none;
+	}
+	
+	header .navbar li {
+		display: block;
+		margin: 0 auto;
+	}
+	
+	header .navbar a {
+		padding: 0;
+	}
+	
+	.hero {
+		background-image: url("https://images.unsplash.com/1/macbook-air-all-faded-and-stuff.jpg?auto=format&fit=crop&w=800&q=80");
+		height: calc(100vh - 200px);
+		margin-top: 0;
+		min-height: 200px;
+	}
+	
+	.slogan {
+		font-size: 1.4rem;
+		max-width: 768px;
+		padding: 0 25% 0 12px;
+	}
+	
+	.links .btn {
+		height: 50px;
+		width: 50px;
+	}
+		
+	.links .fa {
+		font-size: 30px;
+	}
+	
+	.links p {
+		font-size: 0.9rem;
+	}
+	
+	.featured h2 {
+		font-size: 1.2rem;
+	}
+	
+	.gallery .layer {
+		background-color: rgba(50, 51, 49, 0.1);
+		bottom: 0;
+		top: 0;
+	}
+	
+	.gallery .layer .fa {
+		font-size: 1.6em;
+		line-height: 1;
+		margin: 10px;
+		padding: 15px;
+	}
+	
+	.team .img-container {
+		height: 130px;
+		width: 130px;
+	}
+	
+	.team img {
+		transform: translate(-10px, -10px);
+	}
+	
+	.team .caption a {
+		display: inline;
+		font-size: 1.2rem;
+		max-width: 100%;
+	}
+	
+	.picture {
+		height: auto;
+	}
+	
+	.picture img {
+		max-width: 270px;
+	}
+	
+	.picture .content {
+		max-height: none;
+		text-align: center;
+	}
+	
+	.picture .content h2 {
+		font-size: 1.6rem;
+		margin-bottom: 0;
+		margin-top: 0;
+	}
+	
+	.numbers h4,
+	.numbers p {
+		line-height: 0.4;
+	}
+	
+	.footer .contact h3,
+	.footer .social h3 {
+		border-top: 1px solid #fff;
+	}
+	
+	.footer h3,
+	.footer p {
+		margin: 0 0 10px;
+		padding-top: 20px;
+		text-align: center;
+	}
+	
+	.footer .contact h4,
+	.footer .contact p {
+		margin: 0;
+		padding: 0;
+	}
+	
+	.footer .contact h4 {
+		text-align: right;
+	}
+	
+	.footer .contact p {
+		text-align: left;
+	}
+	
+	.footer h3::after {
+	  display: none;
+	}
+
+	.footer .social .btn {
+		display: inline-block;
+		float: none;
+		height: 50px;
+		margin: 0 9px 20px;
+		width: 50px;
+	}
+	
+	.footer .social .fa {
+		line-height: 50px;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+	header .navbar a {
+		padding: 0 20px;
+	}
+	
+	.hero {
+		background-image: url("https://images.unsplash.com/1/macbook-air-all-faded-and-stuff.jpg?auto=format&fit=crop&w=1280&q=80");
+		min-height: 300px;
+	}
+	
+	.slogan {
+		padding: 0 150px 0 25px;
+	}
+	
+	.links .btn {
+		height: 60px;
+		width: 60px;
+	}
+		
+	.links .fa {
+		font-size: 35px;
+	}
+	
+	.gallery .layer {
+		background-color: rgba(50, 51, 49, 0.1);
+		bottom: 0;
+		top: 0;
+	}
+	
+	.gallery .layer .fa {
+		font-size: 1.6em;
+		line-height: 1;
+		margin: 10px;
+		padding: 15px;
+	}
+	
+	.team .img-container {
+		height: 140px;
+		width: 140px;
+	}
+	
+	.team .caption a {
+		display: inline;
+		font-size: 1.2rem;
+	}
+	
+	.picture .content {
+		max-height: none;
+	}
+	
+	.numbers h4,
+	.numbers p {
+		line-height: 0.7;
+	}
+	
+	.footer .social .btn {
+		height: 50px;
+		margin-bottom: 10px;
+		margin-right: 10px;
+		width: 50px;
+	}
+	
+	.footer .social .fa {
+		line-height: 50px;
+	}
+}

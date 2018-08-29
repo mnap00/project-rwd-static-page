@@ -1,8 +1,11 @@
 # Project RWD Static Webpage
+
+## Content
+
 Static webpage to practice responsive web design
+
 [Github pages](https://mnap00.github.io/project-rwd-static-page/)
 
-## Completed so far
 This one is imported from external editor and will be used as a template for the project. The webpage was written in HTML5 and CSS3 only. No JS events.
 
 CSS is a horrible mess. Tag and class selectors are mixed and written without prior plan.
